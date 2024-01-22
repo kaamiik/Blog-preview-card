@@ -16,6 +16,8 @@ body {
 .container {
   background-color: hsl(0, 0%, 100%);
   max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8px;
   border: 1px solid;
   border-radius: 16px;
@@ -23,7 +25,7 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.container:hover{
+.container:has(.heading:hover) {
   box-shadow: 16px 16px hsl(0, 0%, 7%); 
 }
 
@@ -90,13 +92,14 @@ p.intro{
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color:burlywood;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .attribution a {
    color: hsl(228, 45%, 44%);
-}
-
-footer {
-  position: fixed;
-  bottom: 8px;
 }
