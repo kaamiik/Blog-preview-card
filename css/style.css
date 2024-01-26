@@ -25,7 +25,7 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.container:has(.heading:hover) {
+.container:has(a:hover) {
   box-shadow: 16px 16px hsl(0, 0%, 7%); 
 }
 
@@ -58,7 +58,12 @@ p.intro{
   color: hsl(0, 0%, 7%);
 }
 
-.heading:hover{
+.heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
   cursor: pointer;
   color: hsl(47, 88%, 63%);
 }
@@ -101,5 +106,5 @@ p.intro{
 }
 
 .attribution a {
-   color: hsl(228, 45%, 44%);
+   color: hsl(247, 93%, 48%);
 }
